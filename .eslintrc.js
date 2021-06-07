@@ -3,7 +3,12 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: ["airbnb-base"],
+  extends: [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
@@ -27,7 +32,6 @@ module.exports = {
   },
   rules: {
     "import/extensions": 0,
-    "no-unused-vars": 0,
     "class-methods-use-this": 0
   }
 };

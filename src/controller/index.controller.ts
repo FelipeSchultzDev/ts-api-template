@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 class IndexController {
-  async get(req: Request, res: Response) {
+  async get(req: Request, res: Response): Promise<Response> {
     return res.status(200).json({ success: true });
   }
 }
